@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PERSONAL INFORMATION</title>
+    <center>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How to create a website using HTML and CSS</title>
+        <link rel="stylesheet" href="css/style.css">
+    </center>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: 'poppins', sans-serif;
+    }
+    
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+    
+    body {
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+    
+    section {
+        min-height: 100vh;
+        padding: 10rem 9% 2rem;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem 9%;
+        background: var(--bg-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    :root {
+        --bg-color: #1f242d;
+        --text-color: #fff;
+    }
+    
+    .navbar a {
+        font-size: 1.7rem;
+        color: var(--text-color);
+        margin-left: 4rem;
+        transition: 3s;
+    }
+    
+    navbar a:hover {
+        color: var(--main-color);
+    }
+    
+    .navbar a.active {
+        color: var(--main-color);
+    }
+    
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home-content h3 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    .home-img img {
+        max-width: 35vw;
+    }
+    
+    .home-content h3:nth-of-type(2) {
+        margin-bottom: 2rem;
+    }
+    
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        background: var(--bg-color)
+    }
+    
+    .about-content h2 {
+        font-size: 5.6rem;
+    }
+    
+    .about-content h4 {
+        font-size: 2.2rem;
+    }
+    
+    .Achivements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        background: var(--bg-color)
+    }
+    
+    .Achivements-content h2 {
+        font-size: 5.6rem;
+    }
+    
+    .Achivements-content h4 {
+        font-size: 2.2rem;
+    }
+    
+    .contact h1 {
+        margin-bottom: 3rem;
+        font-size: 5.6rem;
+    }
+    
+    .contact form {
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .contact p {
+        font-size: 3.3rem;
+    }
+</style>
+
+<body>
+    <center>
+        <header class="header">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#Achivements">Achivements</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8LrGjiUDcvYjUMk7jUJJZo0kK4Y4NzKxmQ&usqp=CAU">
+            <div class="home-content">
+                <h2>Hii,I'm</h2><br>
+                <h3>A.AKSHAY</h3><br>
+                <h2><span>I'm a Student <span></h2>
+</div>
+</section>
+  <section class="about" id="about">
+           
+            <div class="about-content">
+                <h2 class="heading">About<span> Me </span></h2><br><br>
+                <h4>NAME:
+                    <p style="color:Tomato;">A.AKSHAY</p>
+                </h4><br>
+                <h4>CURRENT STATUS:
+                    <p style="color:Tomato;">Student</p>
+                </h4><br>
+                <h4>QUALIFIED:
+                    <p style="color:Tomato;"> B.Tech Qualified</p>
+                </h4><br>
+                <h4>KNOWN LANGUAGES:
+                    <p style="color:Tomato;">Tamil,English</p>
+                </h4><br>
+                <h4> PROGRAMMING LANGUAGES:
+                    <p style="color:Tomato;">python , JAVA , c</p>
+                </h4><br>
+                <h4>AGE:
+                    <p style="color:Tomato;"> 19</p>
+                </h4><br>
+                <h4>
+                    <p style="color:white;">Currently pursuing B.Tech-Information Technology in Dr.N.G.P.IT</p>
+                </h4>
+            </div>
+        </section>
+        <section class="Achivements" id="Achivements">
+            <div class="Achivements-content">
+                <h2 class="heading">Achivements</h2><br><br>
+                <h4>CERTIFICATES:<br></br>
+                    <p style="color:Tomato;">I particapated in Badminton and won prizes </p>
+                </h4><br>
+                <h4>
+                    <p style="color:Tomato;">I have completed Learnathon courses and got certificates</p>
+                </h4><br>
+                <h4>
+                    <p style="color:Tomato;">Matlab certificates(ONRAMP AND MACHINE LEARNING)</p>
+                </h4><br>
+                <h4>
+                    <p style="color:Tomato;">I Had attended a workshop conducted by Indian Institute Of Technology-(MADRAS)</p>
+                </h4><br>
+
+                <br></div>
+        </section>
+
+        <section class="contact" id="contact">
+            <form action="#">
+                <div class="container">
+                    <h1>Contact me</h1>
+                    <h2>Email ID:
+                        <p style="color:DodgerBlue;">akshaya@drngpit.ac.in</p>
+                    </h2><br>
+                    <h2>Address:
+                        <p style="color:DodgerBlue;">19,Arumuga Nagar,G-block,Karaikudi </p>
+                    </h2><br>
+                    <h2>Insta ID:
+                        <p style="color:DodgerBlue;">_akshay_ananth_</p>
+                    </h2><br>
+                    <h2>Facebook ID:
+                        <p style="color:DodgerBlue;">Akshay anantharaj</p>
+                    </h2><br>
+                    <h2>Ph_no::
+                        <p style="color:DodgerBlue;">9626745032</p>
+                    </h2><br>
+                    <h2>Linked_in ID:
+                        <p style="color:DodgerBlue;">Akshay Anantharaj</p>
+                    </h2>
+                    </ul>
+                </div>
+            </form>
+        </section>
+    </center>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>© Copyright 2022 itzz DK Co LTd.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
